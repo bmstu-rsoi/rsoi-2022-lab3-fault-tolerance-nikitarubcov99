@@ -54,12 +54,9 @@ jobs:
         timeout-minutes: 10
         run: docker compose build
 
-      - name: Wait 30s for App To Deploy
-        run: sleep 30s
-        shell: bash
 
       - name: Run containers
-        timeout-minutes: 5
+        timeout-minutes: 15
         run: |
           docker compose up -d
           ./scripts/wait-script.sh
