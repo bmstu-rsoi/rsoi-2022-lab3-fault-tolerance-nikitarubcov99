@@ -44,7 +44,7 @@ jobs:
       - name: Build with Gradle
         run: cd Payment && ./gradlew build
 
-      # Payment
+      # Gateway
       - name: Grant execute permission for gradlew
         run: cd Gateway && chmod +x gradlew
       - name: Build with Gradle
