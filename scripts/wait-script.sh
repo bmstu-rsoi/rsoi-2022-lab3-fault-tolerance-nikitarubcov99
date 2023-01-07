@@ -2,6 +2,11 @@
 
 IFS="," read -ra PORTS <<<"$WAIT_PORTS"
 
+echo "Sleeping for 120 seconds"
+sleep 120
+echo "Wake up"
+
+
 PIDs=()
 for port in "${PORTS[@]}"; do
   echo "Starts health checking..."
