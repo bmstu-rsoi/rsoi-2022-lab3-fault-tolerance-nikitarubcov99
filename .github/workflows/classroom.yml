@@ -56,7 +56,7 @@ jobs:
 
 
       - name: Run containers
-        timeout-minutes: 15
+        timeout-minutes: 10
         run: |
           docker compose up -d
           ./scripts/wait-script.sh
