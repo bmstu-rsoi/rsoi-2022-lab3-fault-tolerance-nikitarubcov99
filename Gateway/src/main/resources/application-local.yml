@@ -14,8 +14,8 @@ path:
 port:
   service:
     hotel: "8070"
-    loyalty: "8050"
     payment: "8060"
+    loyalty: "8050"
 
 resilience4j:
   circuit-breaker:
